@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function savedata(){
+            var fr=(document.getElementById("from").value);
+            var too=(document.getElementById("to").value);
+            var gee=(document.getElementById("greet").value);
+            localStorage.setItem("fr1",fr);
+            localStorage.setItem("to1",too);
+            localStorage.setItem("ge1",gee);
+           
+        }
+
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>Greeting</legend>
+    <figure>
+        <img src="Assets/Damon.jpg " style="width:50px; height: auto;">
+    </figure>
+    <figcaption>DAMON SALVATORE</figcaption>
+    <table>
+        <tr>
+            <td>from</td>
+            <td><input type="text" name="from" id="from"></td>
+        </tr>
+        <tr>
+            <td>to</td>
+            <td><input type="text" name="to" id="to"></td>
+        </tr>
+        <tr>
+            <td>greeting</td>
+            <td><input type="text" name="greet" id="greet"></td>
+        </tr>
+        <tr>
+            <td><input type="submit" name="click here to greet" id="s1" onclick="savedata()"/>
+        </tr>
+    </table>
+    </fieldset>
+    
+</body>
+</html>
